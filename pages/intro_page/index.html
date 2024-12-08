@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Title of this subpage -->
+    <title>Bilige Wuyun | About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="ds_index.css" />
+    <script src="index.js"></script>
+    <style>
+        /* Style to display images side-by-side with equal height */
+        .image-container {
+            display: flex;
+            gap: 20px; /* Space between images */
+            justify-content: center; /* Center the images */
+            align-items: stretch; /* Ensure both images are stretched to the same height */
+        }
+
+        .image-container img {
+            width: 70%; /* Make the images larger by increasing width */
+            height: 100%; /* Ensure they take the same height */
+            object-fit: cover; /* Ensure they fill the container without distorting aspect ratio */
+        }
+
+        .stacking_img {
+            text-align: center; /* Center the image */
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="left_container">
+        <div class="btn about" onclick="showContent('about')">
+            <h3>About</h3>
+        </div>
+    </div>
+    <div class="right_container">
+        <!-- About Section -->
+        <div class="right_present_about content">
+            <div class="card">
+                <h1>About</h1>
+
+                <!-- Photo Section (Images Above Text) -->
+                <div class="image-container">
+                    <div class="stacking_img">
+                        <img src="../../dict/images/IMG_8280.jpg" alt="Daily Photo">
+                        <p></p>
+                    </div>
+                    <div class="stacking_img">
+                        <img src="../../dict/images/IMG_0459.jpg" alt="Professional Photo">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Introduction</h2>
+                    <p>
+                        Hi! I'm Bilige Wuyun, a Data Scientist with a Master’s degree in Statistics and Data Science from KU Leuven.
+                        I’m a Mongolian girl who grew up in the vast grasslands of Inner Mongolia, shaped by a rich nomadic culture.
+                        My journey brought me to Europe for my studies, and now I’m building my career here.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2>Professional Background</h2>
+                    <p>
+                        I am a highly motivated and passionate data enthusiast with a strong interest in solving complex problems and uncovering meaningful insights from data.
+                        My professional experience includes building Machine Learning models and developing MLOps pipelines, as well as a solid foundation in statistical methods.
+                        I thrive on working with inspiring teams, getting creative with data, leveraging state-of-the-art technologies, and contributing to building innovative products.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2>Hobbies and Activities</h2>
+                    <p>
+                        I love going for runs, hitting the gym, painting for fun, traveling to new places, and enjoying nature on hikes.
+                        I’ve always wanted to make a difference, so back in 2016 during my university days, I founded a nonprofit organization. Through it, I’ve helped hundreds of students by sharing valuable information to guide them in their university applications.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="return">
+            <div class="btn ds_to_home">
+                <a href="../../index.html">
+                    <h2>Return</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize with 'About' content displayed
+        showContent('about');
+    </script>
+</body>
+</html>

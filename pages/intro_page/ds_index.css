@@ -1,33 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-body{
+body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../../dict/images/gm_cover.jpg');
+    background-image: url('../../dict/images/ds_cover.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* flex-direction: column; */
-  }
+}
 
-  .left_container {
+.left_container {
     width: 200px;
-    height: 250px;
+    height: 200px;
     background-color: rgba(51, 51, 51, 0.8); /* Background color with 80% opacity */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 10px; /* Adding border-radius for rounded corners */
-    /* margin-left: 20px; */
-    margin-right:50px;
-    margin-left: 20px;
+    margin: 0 20px;
 }
 
 .btn {
@@ -44,78 +41,75 @@ body{
     background-color: #555; /* Change the background color on hover */
 }
 
-.right_container{
-    position: relative;
+.right_container {
     width: 70%;
-    height: 750px;
     background-color: rgba(51, 51, 51, 0.8);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px;
-    margin: 20px 20px 50px 20px;
+    margin: 20px;
+    border-radius: 10px; /* Adding border-radius for the container */
 }
 
-.right_present_professional,
-.right_present_research,
-.right_present_inschool {
-    position: absolute;
-    top: 30px;
-    left: 50px;
-    right: 50px;
-    bottom: 50px;
-    padding: 20px; /* Add padding for spacing */
-    display: none;
-    box-sizing: border-box; /* Include padding in the total width */
+.right_present_about {
+    width: 100%;
     max-height: 800px;
-    overflow-y: auto; 
-}
-
-.right_present_professional.active,
-.right_present_research.active,
-.right_present_inschool.active {
-    display: block;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
 .card {
     color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.card h1{
+.card h1 {
     font-size: 32px;
     font-weight: 400;
-    margin-top: 10px;
-}
-
-.card h2{
-    font-size: 20px;
-    font-weight: 200;
     margin-bottom: 20px;
 }
 
-.card p{
+.card p {
     font-size: 18px;
     font-weight: 200;
-    margin-bottom: 25px;
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 30px;
+}
+
+.stacking_img {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.stacking_img img {
+    width: 70%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a shadow for emphasis */
+}
+
+.stacking_img p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .return {
-    position: relative;
     display: flex;
-    margin: 850px 0 0 0;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-a:link {
+a:link,
+a:visited {
     color: #fff;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-a:visited{
-    color: #fff;
-}
-
-.mall_video{
-    position: relative;
-    margin-left: 200px;
-    margin-right: 200px;
+a:hover {
+    text-decoration: underline;
 }

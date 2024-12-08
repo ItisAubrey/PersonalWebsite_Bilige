@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Featured Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="game_index.css" />
+    <script src="index.js"></script>
+</head>
+    <body>
+        <div class="left_container">
+            <div class="btn prof" onclick="showContent('professional')">
+                <h3>Active Learning for Medical Image Segmentation</h3>
+            </div>
+            <div class="btn research" onclick="showContent('research')">
+                <h3>End to End Vehicle Insurance Claim Fraud Detection ML Project</h3>
+            </div>
+            <div class="btn inschool" onclick="showContent('inschool')">
+                <h3>PDF Chatbot with Groq and LangChain</h3>
+            </div>
+        </div>
+        <div class="right_container">
+            <!-- Active Learning Project -->
+            <div class="right_present_professional content">
+                <div class="card">
+                    <h1>Active Learning for Medical Image Segmentation</h1>
+                    <p></p> <!-- Empty line added -->
+                    <p>For my master’s thesis, I focused on evaluating and comparing Active Learning strategies within the U-Net framework for accurate ultrasound image segmentation in ovarian cancer cases. We (me and my thesis partner) used TensorFlow-Keras for developing and experimenting with the models. The results were remarkable—active learning methods achieved performance similar to models trained on the entire dataset while using less than 50% of the training data.</p>
+                    <img src="../../dict/images/active_learning.png" alt="Active Learning Project Image" style="width: 100%; height: auto; max-height: 600px; object-fit: contain;">
+                    <a href="https://github.com/ItisAubrey/ml_vehicle_insurance_fraud_detection" target="_blank">View GitHub Repo</a>
+                </div>
+            </div>
+            <!-- Vehicle Insurance Project -->
+            <div class="right_present_research content">
+                <div class="card">
+                    <h1>End to End Vehicle Insurance Claim Fraud Detection</h1>
+                    <p></p> <!-- Empty line added -->
+                    <p>This project focuses on detecting fraud in vehicle insurance claims using machine learning, providing a comprehensive end-to-end solution. It includes notebook experiments for exploratory data analysis and training various machine learning models.</p>
+                    <p>The model training pipeline covers all essential steps: data ingestion, data transformation, feature selection, and model training. Additionally, a Flask web app was developed to deploy the best-performing model, enabling real-time fraud predictions for insurance claims.</p>
+                    <p>To ensure seamless deployment, CI/CD pipelines were implemented using GitHub Actions, leveraging AWS for hosting and scalability.</p>
+                    <img src="../../dict/images/vehicle_insurance.png" alt="Vehicle Insurance Project Image" style="width: 100%; height: auto; max-height: 600px; object-fit: contain;">
+                    <a href="https://github.com/ItisAubrey/ml_vehicle_insurance_fraud_detection" target="_blank">View GitHub Repo</a>
+                </div>
+            </div>
+            <!-- PDF Chatbot Project -->
+            <div class="right_present_inschool content">
+                <div class="card">
+                    <h1>PDF Chatbot with Groq and LangChain</h1>
+                    <p></p> <!-- Empty line added -->
+                    <p>I built a Streamlit-based PDF chatbot using open-source models to process, index, and answer questions from uploaded documents. The solution integrates LangChain components, such as PyPDFLoader for document loading, FAISS for efficient vector storage, and OllamaEmbeddings for creating document embeddings.</p>
+                    <img src="../../dict/images/chatbot pdf1.png" alt="PDF Chatbot Project Image 1" style="width: 100%; height: auto; max-height: 600px; object-fit: contain;">
+                    <a href="https://github.com/ItisAubrey/RAG_lanchain_genai_app" target="_blank">View GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+        <div class="return">
+            <div class="btn ds_to_home">
+                <a href="../../index.html">
+                    <h2>Return</h2>
+                </a>
+            </div>
+        </div>
+        <script>
+            // Initialize with 'Professional' content displayed
+            showContent('professional');
+        </script>
+    </body>
+</html>
